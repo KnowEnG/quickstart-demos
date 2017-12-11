@@ -1,4 +1,4 @@
-	HM90_K6_cluister	Stage	Gender	Vita_status	Days_survival	Age_at_diagnosis	Residual_tumor	Histological_code(ICD03)	ICD10_code	Smoking_statu
+	HM90_K6_cluster	Stage	Gender	Vital_status	Days_survival	Age_at_diagnosis	Residual_tumor	Histological_code(ICD03)	ICD10_code	Smoking_status
 TCGA-38-4627	1	ii	female	deceased	1147	64	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
 TCGA-38-6178	1	iii	female	living	158	70	r1	8140/3	c34.12	lifelong non-smoker
 TCGA-44-2661	1	i	female	living	103	69	r0	8140/3	c34.12	lifelong non-smoker
