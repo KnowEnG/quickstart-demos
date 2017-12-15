@@ -56,3 +56,5 @@ Below are descriptions for the contents of each of these files:
 
 #### G) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 - This yaml file contains information about the interaction network if used in the analysis.  Its keys include summarizations about the network size (“data”), its public data source details (“datasets”), information about the meaning of its edges (“edge_type”), and some commands and configurations used in its construction (“export”).
+
+The licensing terms of the source code, containers, and the Knowledge Network used to perform this analysis can be found at https://knoweng.github.io/.
