@@ -1,0 +1,306 @@
+	HM90_K6_cluster	Stage	Gender	Vital_status	Days_survival	Age_at_diagnosis	Residual_tumor	Histological_code(ICD03)	ICD10_code	Smoking_status
+TCGA-38-4627	1	ii	female	deceased	1147	64	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-38-6178	1	iii	female	living	158	70	r1	8140/3	c34.12	lifelong non-smoker
+TCGA-44-2661	1	i	female	living	103	69	r0	8140/3	c34.12	lifelong non-smoker
+TCGA-44-5643	1	iii	male	living	106	53	NaN	8140/3	c34.31	current smoker
+TCGA-44-6147	1	i	female	living	236	67	NaN	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-44-6775	1	i	female	living	82	72	rx	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-44-6779	1	ii	female	deceased	499	50	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-49-4490	1	iii	female	deceased	385	45	NaN	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-49-4494	1	iii	male	deceased	1081	77	r0	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-49-4510	1	ii	female	deceased	913	51	r0	8140/3	c34.12	current smoker
+TCGA-49-4512	1	iii	female	deceased	905	69	NaN	8140/3	c34.2	lifelong non-smoker
+TCGA-49-6745	1	iii	male	living	150	82	NaN	8260/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-50-5935	1	i	female	deceased	653	86	NaN	8140/3	c34.12	NaN
+TCGA-50-6595	1	iii	female	deceased	189	74	NaN	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-50-6673	1	i	female	deceased	22	84	NaN	8140/3	NaN	lifelong non-smoker
+TCGA-55-6975	1	ii	male	deceased	118	61	NaN	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-6978	1	ii	male	deceased	166	81	NaN	8140/3	NaN	lifelong non-smoker
+TCGA-55-6979	1	ii	female	deceased	236	59	NaN	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-55-7728	1	i	female	living	24	64	r0	8480/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-7903	1	i	male	living	19	64	r0	8140/3	c34.31	current smoker
+TCGA-55-7914	1	ii	female	living	3	71	r0	8140/3	c34.11	current smoker
+TCGA-64-1681	1	i	female	deceased	1350	61	r0	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-67-3772	1	i	female	living	573	82	NaN	8140/3	c34.11	lifelong non-smoker
+TCGA-67-6215	1	i	female	living	161	52	r0	8140/3	c34.31	lifelong non-smoker
+TCGA-69-7760	1	ii	male	living	154	73	NaN	8255/3	c34.31	lifelong non-smoker
+TCGA-69-7761	1	i	male	living	186	84	NaN	8550/3	c34.32	current reformed smoker for > 15 years
+TCGA-73-4675	1	iii	male	living	40	59	rx	8140/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-75-6203	1	iii	female	living	NaN	NaN	r0	8140/3	c34.32	lifelong non-smoker
+TCGA-75-7025	1	i	male	living	NaN	NaN	r0	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-78-7145	1	iv	female	deceased	826	52	r1	8140/3	c34.2	current reformed smoker for < or = 15 years
+TCGA-86-7701	1	iv	male	living	11	66	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-86-8055	1	iii	male	living	10	79	r0	8140/3	c34.11	current smoker
+TCGA-91-6831	1	i	male	living	39	66	NaN	8140/3	c34.2	current smoker
+TCGA-91-6840	1	i	female	living	0	59	NaN	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-91-6849	1	iii	female	living	28	75	NaN	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-97-7941	1	i	female	living	22	72	NaN	8550/3	NaN	current reformed smoker for > 15 years
+TCGA-05-4250	2	iii	female	deceased	121	79	r2	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4403	2	i	male	living	NaN	76	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-05-4422	2	i	male	living	NaN	68	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4433	2	i	male	living	730	82	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-44-6146	2	ii	male	living	302	64	NaN	8480/3	c34.32	current reformed smoker for > 15 years
+TCGA-44-7659	2	i	male	living	298	70	NaN	8140/3	c34.12	current smoker
+TCGA-50-5051	2	iii	female	living	455	42	NaN	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-50-5932	2	ii	male	deceased	1234	75	NaN	8140/3	c34.11	NaN
+TCGA-50-6597	2	i	female	living	1015	79	NaN	8140/3	c34.31	lifelong non-smoker
+TCGA-55-6642	2	i	male	living	992	63	NaN	8140/3	c34.31	current smoker
+TCGA-55-6970	2	iii	female	deceased	464	67	NaN	8260/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-6984	2	ii	female	deceased	760	71	NaN	8140/3	NaN	NaN
+TCGA-55-7725	2	i	female	living	39	68	r0	8140/3	c34.31	current reformed smoker for > 15 years
+TCGA-55-7815	2	i	male	living	54	77	r0	8140/3	c34.31	lifelong non-smoker
+TCGA-64-5774	2	i	male	living	2550	60	r0	8140/3	c34.00	current reformed smoker for < or = 15 years
+TCGA-64-5815	2	ii	male	living	223	74	r0	8255/3	c34.11	current reformed smoker for > 15 years
+TCGA-67-3773	2	i	female	living	427	84	r0	8140/3	c34.32	current reformed smoker for > 15 years
+TCGA-73-4659	2	iii	male	deceased	711	66	r0	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-73-7498	2	ii	female	living	621	58	r0	8252/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-75-6206	2	i	male	living	NaN	NaN	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-75-7030	2	ii	male	living	NaN	NaN	r0	8140/3	NaN	lifelong non-smoker
+TCGA-78-7160	2	iv	male	living	678	61	r0	8255/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-78-7537	2	i	male	deceased	1622	72	r0	8255/3	c34.11	current reformed smoker for > 15 years
+TCGA-80-5608	2	i	female	living	NaN	NaN	r0	8260/3	NaN	current smoker
+TCGA-86-7713	2	i	male	living	7	70	r0	8140/3	c34.2	lifelong non-smoker
+TCGA-86-7953	2	i	female	living	34	69	rx	8250/3	c34.12	lifelong non-smoker
+TCGA-86-8076	2	i	male	living	26	42	r0	8260/3	c34.11	lifelong non-smoker
+TCGA-93-7347	2	i	female	living	297	76	r0	NaN	NaN	current reformed smoker for > 15 years
+TCGA-J2-8194	2	ii	female	living	113	69	NaN	8255/3	c34.31	current reformed smoker for > 15 years
+TCGA-05-4398	3	iii	female	living	1431	47	r0	8255/3	NaN	current smoker
+TCGA-05-4410	3	i	male	living	0	62	rx	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4424	3	ii	male	living	913	70	r1	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4427	3	ii	female	living	791	65	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4432	3	ii	male	living	761	66	r0	8255/3	NaN	current smoker
+TCGA-05-5425	3	ii	male	living	90	68	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-05-5428	3	ii	male	living	0	57	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-38-4625	3	i	female	living	2973	66	r0	8140/3	c34.11	current smoker
+TCGA-38-4631	3	i	female	deceased	354	72	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-38-4632	3	iv	male	deceased	1357	42	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-44-2656	3	i	male	living	581	59	NaN	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-44-2668	3	i	male	living	246	51	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-44-3918	3	i	female	living	196	60	r0	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-44-5644	3	i	female	living	498	51	NaN	8140/3	c34.31	current smoker
+TCGA-44-7660	3	i	male	living	162	72	NaN	8140/3	c34.11	current smoker
+TCGA-44-7662	3	i	male	living	50	61	NaN	8140/3	c34.12	current smoker
+TCGA-44-7670	3	ii	female	living	531	47	NaN	8140/3	c34.12	current smoker
+TCGA-44-8117	3	i	female	living	259	54	NaN	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-49-4514	3	i	female	living	1314	79	rx	8260/3	c34.12	current reformed smoker for > 15 years
+TCGA-49-6743	3	iii	female	living	369	81	NaN	8310/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-50-5049	3	i	male	living	1485	70	NaN	8140/3	c34.11	NaN
+TCGA-50-5066	3	i	male	living	297	72	r0	8255/3	c34.11	lifelong non-smoker
+TCGA-50-5930	3	iii	male	deceased	282	47	NaN	8255/3	c34.31	NaN
+TCGA-50-6590	3	i	female	deceased	1287	72	NaN	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-53-7624	3	iv	female	living	1068	40	r0	8140/3	c34.11	current smoker
+TCGA-55-1592	3	i	male	deceased	701	65	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-55-6985	3	i	female	living	1233	58	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-7907	3	ii	male	living	16	77	r0	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-55-8089	3	i	male	living	92	56	r0	8140/3	c34.11	current smoker
+TCGA-64-1676	3	i	male	living	1728	58	r0	8140/3	c34.31	current smoker
+TCGA-64-1679	3	iii	female	living	1685	58	r0	8140/3	c34.11	current smoker
+TCGA-64-5781	3	i	female	living	1202	55	r0	8255/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-67-3771	3	i	female	living	609	77	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-69-7979	3	i	female	living	89	71	NaN	8255/3	c34.11	current smoker
+TCGA-73-4668	3	ii	female	living	467	66	r0	8507/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-75-5126	3	iii	female	living	NaN	NaN	r2	8260/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-75-6214	3	iii	female	living	NaN	NaN	r0	8140/3	NaN	current smoker
+TCGA-78-7155	3	i	male	deceased	1171	68	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-78-7220	3	iii	female	deceased	807	53	r0	8255/3	c34.12	current smoker
+TCGA-78-7536	3	iii	male	deceased	244	69	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-86-6851	3	ii	female	living	0	73	NaN	8255/3	NaN	current smoker
+TCGA-91-6829	3	i	male	deceased	1257	78	NaN	8252/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-91-6848	3	iii	male	living	127	59	NaN	8252/3	NaN	current reformed smoker for < or = 15 years
+TCGA-95-7039	3	ii	female	living	34	54	NaN	8255/3	NaN	current smoker
+TCGA-95-7043	3	i	female	living	2	63	NaN	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-97-7937	3	i	male	living	181	65	NaN	8507/3	c34.12	current reformed smoker for > 15 years
+TCGA-99-8028	3	i	female	living	458	50	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-44-2657	4	i	female	living	400	74	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-44-8119	4	ii	male	living	98	73	NaN	8140/3	c34.11	current smoker
+TCGA-50-6594	4	iii	female	deceased	370	79	NaN	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-55-5899	4	i	male	living	87	58	r0	8140/3	c34.11	current smoker
+TCGA-64-5775	4	iii	male	deceased	3	71	r0	8140/3	c34.12	current smoker
+TCGA-69-7978	4	ii	male	living	70	59	NaN	8255/3	c34.11	current smoker
+TCGA-78-7146	4	iii	female	deceased	172	71	r0	8255/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-78-7147	4	ii	female	deceased	586	67	r0	8140/3	c34.11	current smoker
+TCGA-91-6836	4	i	female	living	11	52	NaN	8140/3	c34.11	current smoker
+TCGA-99-8032	4	i	male	living	44	61	r0	8140/3	c34.11	current smoker
+TCGA-05-4384	5	iii	male	living	426	66	rx	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-05-4426	5	i	male	living	791	71	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-05-5420	5	iii	male	living	31	67	r0	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-5429	5	iii	male	living	30	60	r0	8140/3	NaN	lifelong non-smoker
+TCGA-05-5715	5	i	female	living	62	69	r0	8255/3	NaN	lifelong non-smoker
+TCGA-38-4628	5	ii	female	deceased	1491	65	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-38-4630	5	i	female	deceased	1073	75	r1	8260/3	c34.11	lifelong non-smoker
+TCGA-44-3919	5	i	female	living	189	71	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-44-5645	5	i	female	living	208	61	NaN	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-50-5055	5	ii	female	living	785	79	r0	8255/3	c34.32	NaN
+TCGA-50-5936	5	iii	male	deceased	257	58	NaN	8480/3	c34.31	NaN
+TCGA-50-5939	5	i	male	deceased	460	85	NaN	8255/3	c34.11	current reformed smoker for > 15 years
+TCGA-50-5942	5	NaN	female	living	135	67	NaN	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-50-5944	5	i	female	living	373	69	NaN	8550/3	c34.11	NaN
+TCGA-55-6543	5	NaN	female	living	2	60	NaN	8253/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-55-6971	5	i	female	living	28	59	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-6980	5	i	male	living	67	56	NaN	8252/3	NaN	lifelong non-smoker
+TCGA-55-6981	5	iii	female	deceased	1379	53	NaN	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-55-6986	5	i	female	living	2161	74	NaN	8252/3	NaN	lifelong non-smoker
+TCGA-55-7573	5	i	female	living	4	72	NaN	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-55-7726	5	i	female	living	31	72	r0	8140/3	c34.31	current reformed smoker for > 15 years
+TCGA-55-7816	5	iv	female	living	31	49	NaN	8140/3	c34.11	lifelong non-smoker
+TCGA-67-6216	5	i	female	living	140	57	r0	8140/3	c34.2	lifelong non-smoker
+TCGA-71-6725	5	i	female	living	61	48	rx	8260/3	c34.11	current smoker
+TCGA-73-4676	5	ii	male	living	122	45	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-75-5147	5	i	female	living	NaN	NaN	r0	8252/3	c34.11	lifelong non-smoker
+TCGA-75-6205	5	i	female	deceased	NaN	NaN	r0	8140/3	c34.12	lifelong non-smoker
+TCGA-75-6207	5	iii	male	deceased	NaN	NaN	r0	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-75-6212	5	ii	female	living	NaN	NaN	r0	8507/3	c34.32	lifelong non-smoker
+TCGA-78-7153	5	i	female	living	760	65	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-78-7162	5	i	male	deceased	3168	75	r0	8255/3	c34.12	current smoker
+TCGA-78-7163	5	i	male	living	6812	60	r0	8140/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-78-7535	5	i	male	deceased	949	45	r0	8140/3	c34.12	current smoker
+TCGA-78-7540	5	i	female	living	881	66	r0	8253/3	c34.32	lifelong non-smoker
+TCGA-80-5607	5	ii	female	living	NaN	NaN	r0	8260/3	NaN	current reformed smoker for > 15 years
+TCGA-86-6562	5	ii	male	living	0	52	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-86-7714	5	iii	female	living	0	61	NaN	8255/3	c34.31	current smoker
+TCGA-86-8074	5	ii	female	living	24	62	r0	8260/3	c34.31	current smoker
+TCGA-86-8075	5	i	female	living	43	66	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-91-6835	5	i	female	living	35	81	NaN	8140/3	c34.31	current reformed smoker for > 15 years
+TCGA-91-6847	5	i	female	living	819	62	NaN	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-93-7348	5	i	female	living	127	75	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-97-7553	5	i	female	living	1331	58	NaN	8252/3	c34.32	current smoker
+TCGA-99-8033	5	iv	female	living	169	74	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-J2-8192	5	ii	female	living	153	65	NaN	8140/3	c34.11	lifelong non-smoker
+TCGA-05-4418	6	iii	male	deceased	273	69	r0	8255/3	NaN	current smoker
+TCGA-44-6144	6	i	male	living	9	58	rx	8140/3	c34.11	current smoker
+TCGA-44-7672	6	i	female	living	418	52	NaN	8140/3	c34.12	current smoker
+TCGA-49-4506	6	ii	female	deceased	1005	68	r1	8140/3	c34.12	current smoker
+TCGA-49-6761	6	iii	female	living	1	68	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-7727	6	iii	male	living	31	71	r0	8140/3	c34.12	current smoker
+TCGA-73-4662	6	i	female	living	911	65	r0	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-78-7161	6	ii	female	living	214	69	r1	8255/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-86-8054	6	iii	male	living	19	61	r0	8550/3	c34.11	current smoker
+TCGA-91-6828	6	i	male	living	37	70	NaN	8140/3	c34.32	current reformed smoker for > 15 years
+TCGA-05-4244	NaN	iv	male	living	0	70	rx	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4249	NaN	i	male	living	1158	67	r0	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-05-4389	NaN	i	male	living	NaN	70	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-05-4390	NaN	i	female	living	1126	58	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4395	NaN	iii	male	deceased	0	76	r0	8255/3	NaN	lifelong non-smoker
+TCGA-05-4396	NaN	iii	male	deceased	303	76	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-05-4397	NaN	ii	male	deceased	731	65	r0	8255/3	NaN	current smoker
+TCGA-05-4402	NaN	iv	female	deceased	244	57	r2	8255/3	NaN	lifelong non-smoker
+TCGA-05-4405	NaN	i	female	living	610	74	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4415	NaN	iii	male	deceased	90	57	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4417	NaN	i	female	living	454	51	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4420	NaN	i	male	living	911	41	r0	8255/3	NaN	current smoker
+TCGA-05-4430	NaN	i	female	living	761	59	r0	8255/3	NaN	current reformed smoker for < or = 15 years
+TCGA-05-4434	NaN	iv	female	deceased	457	67	r2	8255/3	NaN	current smoker
+TCGA-05-5423	NaN	ii	male	living	151	65	r0	8255/3	NaN	current reformed smoker for > 15 years
+TCGA-35-3615	NaN	i	male	living	14	57	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-35-4122	NaN	i	male	living	224	69	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-35-4123	NaN	i	male	living	181	38	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-35-5375	NaN	iii	male	living	264	61	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-38-4626	NaN	ii	female	living	2879	57	r0	8140/3	c34.12	current smoker
+TCGA-38-4629	NaN	ii	male	deceased	863	68	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-38-7271	NaN	i	female	deceased	800	72	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-44-2655	NaN	i	female	living	574	65	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-44-2659	NaN	ii	female	living	529	65	r0	8140/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-44-2662	NaN	i	male	living	480	65	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-44-2665	NaN	ii	female	living	400	55	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-44-2666	NaN	i	male	deceased	97	43	r0	8140/3	c34.11	current smoker
+TCGA-44-3398	NaN	i	female	living	253	77	r0	8140/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-44-4112	NaN	i	female	living	140	60	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-44-6145	NaN	i	female	living	102	62	NaN	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-44-6148	NaN	i	male	living	95	60	rx	8480/3	c34.32	current reformed smoker for > 15 years
+TCGA-44-6774	NaN	iii	female	living	165	56	NaN	8140/3	c34.32	current smoker
+TCGA-44-6776	NaN	i	female	living	1938	60	NaN	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-44-6777	NaN	i	female	deceased	987	85	NaN	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-44-6778	NaN	i	male	living	1110	59	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-44-7661	NaN	i	female	living	153	69	NaN	8140/3	c34.31	current reformed smoker for > 15 years
+TCGA-44-7667	NaN	ii	female	living	557	49	NaN	8140/3	c34.31	current smoker
+TCGA-44-7671	NaN	i	male	living	535	64	NaN	8255/3	c34.2	current reformed smoker for > 15 years
+TCGA-49-4486	NaN	i	male	deceased	2318	72	r0	8140/3	c34.31	current reformed smoker for > 15 years
+TCGA-49-4487	NaN	i	female	deceased	855	72	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-49-4488	NaN	i	female	deceased	869	74	r0	8140/3	c34.32	current reformed smoker for > 15 years
+TCGA-49-4501	NaN	i	female	deceased	1421	67	r0	8140/3	c34.11	lifelong non-smoker
+TCGA-49-4507	NaN	iii	female	deceased	268	73	r0	8140/3	c34.00	current reformed smoker for < or = 15 years
+TCGA-49-6742	NaN	ii	male	living	457	70	NaN	8480/3	c34.12	current reformed smoker for > 15 years
+TCGA-49-6744	NaN	ii	female	living	395	64	rx	8255/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-49-6767	NaN	ii	female	living	0	46	r0	8140/3	c34.2	current smoker
+TCGA-50-5044	NaN	iii	female	deceased	623	72	NaN	8140/3	c34.31	NaN
+TCGA-50-5045	NaN	i	female	deceased	2174	57	NaN	8140/3	c34.31	NaN
+TCGA-50-5068	NaN	ii	female	deceased	1499	59	NaN	8140/3	c34.31	NaN
+TCGA-50-5072	NaN	iii	male	living	245	74	NaN	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-50-5931	NaN	i	female	deceased	434	75	NaN	8140/3	c34.12	NaN
+TCGA-50-5933	NaN	iii	male	deceased	2392	72	NaN	8140/3	c34.32	NaN
+TCGA-50-5941	NaN	iii	female	living	285	55	NaN	8140/3	c34.11	current smoker
+TCGA-50-5946	NaN	i	male	living	349	62	NaN	8255/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-50-6592	NaN	i	female	deceased	776	71	NaN	8140/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-50-6593	NaN	iii	female	deceased	336	49	NaN	8255/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-50-7109	NaN	i	male	living	255	60	NaN	8140/3	c34.31	current smoker
+TCGA-53-7626	NaN	ii	female	living	970	76	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-53-7813	NaN	iii	female	living	418	51	NaN	8252/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-55-1594	NaN	iii	male	living	1178	68	r0	8140/3	c34.31	current smoker
+TCGA-55-1595	NaN	i	female	living	1479	74	NaN	8310/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-55-1596	NaN	ii	male	living	1374	55	r0	8140/3	c34.11	current smoker
+TCGA-55-6712	NaN	NaN	male	living	24	71	NaN	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-55-6968	NaN	i	male	deceased	1292	61	NaN	8140/3	NaN	current smoker
+TCGA-55-6969	NaN	i	male	living	1238	52	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-6972	NaN	i	male	living	1475	72	NaN	8260/3	NaN	current smoker
+TCGA-55-6982	NaN	ii	female	deceased	995	79	NaN	8140/3	NaN	lifelong non-smoker
+TCGA-55-6983	NaN	ii	male	living	1826	81	NaN	8480/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-6987	NaN	i	male	living	1170	77	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-55-7227	NaN	iii	male	living	61	77	NaN	8140/3	c34.31	current reformed smoker for > 15 years
+TCGA-55-7281	NaN	NaN	female	living	18	70	NaN	8140/3	c34.2	current reformed smoker for < or = 15 years
+TCGA-55-7283	NaN	NaN	female	living	34	76	NaN	8252/3	c34.11	current reformed smoker for > 15 years
+TCGA-55-7570	NaN	i	male	living	0	60	r0	8140/3	c34.11	current smoker
+TCGA-55-7574	NaN	i	female	living	95	64	r1	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-55-7910	NaN	ii	female	living	197	50	r0	8140/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-55-7911	NaN	i	female	living	21	70	r0	8140/3	c34.2	current reformed smoker for > 15 years
+TCGA-64-1677	NaN	iii	female	deceased	628	77	r0	8140/3	c34.11	current smoker
+TCGA-64-1678	NaN	ii	female	living	1189	70	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-64-1680	NaN	iv	male	living	1126	63	r0	8140/3	c34.2	current reformed smoker for > 15 years
+TCGA-64-5778	NaN	i	male	living	926	60	r0	8252/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-64-5779	NaN	iii	male	living	507	61	r0	8550/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-67-3770	NaN	i	female	living	609	70	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-67-3774	NaN	i	female	living	385	73	NaN	8140/3	c34.32	current reformed smoker for > 15 years
+TCGA-67-4679	NaN	i	male	living	457	69	r0	8140/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-67-6217	NaN	ii	female	living	422	73	r0	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-69-7763	NaN	i	male	living	690	69	NaN	8550/3	c34.2	current reformed smoker for < or = 15 years
+TCGA-69-7764	NaN	i	male	living	414	75	NaN	8550/3	c34.11	current reformed smoker for > 15 years
+TCGA-69-7765	NaN	iv	male	living	129	56	NaN	8255/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-69-7973	NaN	i	female	living	230	42	NaN	8230/3	c34.2	current reformed smoker for < or = 15 years
+TCGA-69-7974	NaN	iii	female	living	184	54	NaN	8255/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-69-7980	NaN	i	female	living	382	69	NaN	8550/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-73-4666	NaN	iv	female	living	617	52	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-73-4670	NaN	iv	female	living	14	69	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-73-4677	NaN	i	male	deceased	38	74	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-73-7499	NaN	i	female	living	519	81	r0	8255/3	NaN	lifelong non-smoker
+TCGA-75-5122	NaN	i	male	deceased	NaN	NaN	r0	8140/3	c34.12	current reformed smoker for > 15 years
+TCGA-75-5125	NaN	ii	male	living	NaN	NaN	r0	8140/3	c34.11	current reformed smoker for > 15 years
+TCGA-75-5146	NaN	i	male	living	NaN	NaN	r0	8252/3	c34.31	current reformed smoker for > 15 years
+TCGA-75-6211	NaN	i	female	deceased	NaN	NaN	r0	8140/3	NaN	current smoker
+TCGA-75-7027	NaN	i	male	living	NaN	NaN	r0	8140/3	NaN	current smoker
+TCGA-75-7031	NaN	i	female	living	NaN	NaN	r0	8140/3	NaN	current reformed smoker for > 15 years
+TCGA-78-7148	NaN	ii	male	deceased	626	71	r0	8255/3	c34.12	current smoker
+TCGA-78-7149	NaN	iii	male	living	1093	71	r0	8255/3	c34.31	current smoker
+TCGA-78-7150	NaN	ii	male	deceased	665	59	r0	8140/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-78-7152	NaN	i	male	living	1201	65	r0	8255/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-78-7154	NaN	iii	male	deceased	593	72	r0	8140/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-78-7158	NaN	iii	female	deceased	179	59	r1	8255/3	c34.32	current reformed smoker for < or = 15 years
+TCGA-78-7159	NaN	i	female	living	1220	60	r0	8255/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-78-7166	NaN	ii	male	deceased	258	84	r0	8140/3	c34.32	current reformed smoker for > 15 years
+TCGA-78-7167	NaN	iv	male	deceased	2680	77	r0	8260/3	NaN	current smoker
+TCGA-78-7539	NaN	ii	female	living	327	75	r0	8255/3	c34.11	current reformed smoker for > 15 years
+TCGA-78-7542	NaN	i	male	deceased	321	56	r0	8140/3	c34.11	current smoker
+TCGA-78-7633	NaN	i	male	living	994	67	r0	8255/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-80-5611	NaN	i	male	living	NaN	NaN	r0	8230/3	c34.12	current reformed smoker for < or = 15 years
+TCGA-86-7711	NaN	ii	male	living	27	70	r0	8140/3	c34.31	current smoker
+TCGA-86-7954	NaN	i	female	living	0	68	r0	8250/3	c34.31	current reformed smoker for > 15 years
+TCGA-91-6830	NaN	ii	female	living	1	65	NaN	8140/3	NaN	current reformed smoker for < or = 15 years
+TCGA-91-7771	NaN	ii	male	living	31	62	NaN	8140/3	c34.11	current reformed smoker for < or = 15 years
+TCGA-95-7944	NaN	i	male	living	21	71	r0	8140/3	c34.31	current smoker
+TCGA-95-7947	NaN	i	male	living	40	67	r0	8255/3	c34.11	current reformed smoker for > 15 years
+TCGA-95-7948	NaN	i	female	living	132	42	r0	8255/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-97-7546	NaN	i	female	living	963	76	NaN	8550/3	c34.12	current reformed smoker for > 15 years
+TCGA-97-7547	NaN	i	female	living	1435	67	NaN	8260/3	c34.11	current reformed smoker for > 15 years
+TCGA-97-7552	NaN	i	male	living	1476	70	NaN	8253/3	c34.32	current reformed smoker for > 15 years
+TCGA-97-7554	NaN	iii	female	living	263	83	NaN	8260/3	c34.32	current reformed smoker for > 15 years
+TCGA-97-7938	NaN	i	female	deceased	18	76	NaN	8252/3	c34.11	current reformed smoker for > 15 years
+TCGA-99-7458	NaN	iii	female	living	250	74	r0	8252/3	c34.31	current reformed smoker for < or = 15 years
+TCGA-99-8025	NaN	iii	female	living	427	72	r0	8140/3	c34.11	current reformed smoker for < or = 15 years
