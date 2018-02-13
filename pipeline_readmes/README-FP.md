@@ -1,4 +1,4 @@
-This file contains a description of the different output files of the gene prioritization (GP) pipeline. The downloaded zip archive will contain up to seven other files for users to further examine and understand their results.  These other files are:
+This file contains a description of the different output files of the feature prioritization (FP) pipeline. The downloaded zip archive will contain up to seven other files for users to further examine and understand their results.  These other files are:
 
 #### Results Files
 - A) genes_ranked_per_phenotype - Scores for Ranked Genes for Each Phenotype
