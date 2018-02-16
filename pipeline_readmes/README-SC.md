@@ -3,13 +3,13 @@ This file contains a description of the different output files of the sample clu
 #### Results Files
 - A) sample_labels_by_cluster.txt - Sample Cluster Assignment File
 - B) consensus_matrix.txt - Bootstrap Consensus Matrix File 
-- C) top_genes_by_cluster.txt - Cluster Genes Spreadsheet File
-- D) gene_avgs_by_cluster.txt - Cluster Means Spreadsheet File
+- C) top_features_by_cluster.txt - Cluster Features Spreadsheet File
+- D) feature_avgs_by_cluster.txt - Cluster Means Spreadsheet File
 - E) clustering_evalutations.txt - Phenotype Association File (if phenotypic input provided)
 
 #### Reference Files
-- F) clean_genomic_matrix.txt - Mapped Genomic Spreadsheet File
-- G) gene_map.txt - Gene ID Mapping File
+- F) clean_features_matrix.txt - Features Spreadsheet File (mapped if KN guided analysis)
+- G) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
 - H) run_params.yml - Run Parameters File
 - I) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 
@@ -23,11 +23,11 @@ Below are descriptions for the contents of each of these files:
 #### B) consensus_matrix.txt - Bootstrap Consensus Matrix File   
 - This file contains a matrix with the genomic spreadsheet sample_ids as the row and column names.  The values in the matrix indicate the proportion of the number of bootstraps where the corresponding samples co-cluster.  If bootstrapping was not used, these values will be binary {0, 1}. 
 
-#### C) top_genes_by_cluster.txt - Cluster Genes Spreadsheet File
-- This file contains a matrix with the cluster numbers as the columns headers and stable Ensembl gene_ids as the rows. A ‘1’ in this table indicates that the row gene was one of the top 100 most important (highest scoring) genes for that specific column cluster.  All other values are 0.  Importance is calculated as the average value across the cluster.  If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample. This file can be used in the Gene Set Characterization pipeline.
+#### C) top_features_by_cluster.txt - Cluster Features Spreadsheet File
+- This file contains a matrix with the cluster numbers as the columns headers and feature identifiers as the rows. If the KN was used in the analysis, feature identifiers will be the stable Ensembl gene_ids. A ‘1’ in this table indicates that the row feature was one of the top 100 most important (highest scoring) features for that specific column cluster.  All other values are 0.  Importance is calculated as the average value across the cluster.  If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample. If features are genes, this file can be used in the Gene Set Characterization pipeline.
 
-#### D) gene_avgs_by_cluster.txt - Cluster Means Spreadsheet File
-- This file contains a matrix with the cluster numbers as the columns headers and stable Ensembl gene_ids as the rows. The values in this table are the mean value for the row gene for that specific column cluster. If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample, otherwise it is the mean of the original input values.
+#### D) feature_avgs_by_cluster.txt - Cluster Means Spreadsheet File
+- This file contains a matrix with the cluster numbers as the columns headers and feature identifiers as the rows. If the KN was used in the analysis, feature identifiers will be the stable Ensembl gene_ids. The values in this table are the mean value for the row feature for that specific column cluster. If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample, otherwise it is the mean of the original input values.
 
 #### E) clustering_evalutations.txt - Phenotype Association File (if phenotypic input provided)
 - The columns of this file are defined as follows:
@@ -40,10 +40,10 @@ Below are descriptions for the contents of each of these files:
   7) SUCCESS/FAIL: For the given phenotype, whether or not a statistical test could be performed successfully
   8) Comments: NA for SUCCESS in Column 7, but descriptive message for FAIL case
 
-#### F) clean_genomic_matrix.txt - Mapped Genomic Spreadsheet File
-- This file contains a modified version of the user’s input genomic matrix where the original gene identifiers provided have been mapped to stable Ensembl gene_ids where possible.  When using the Knowledge Network guided analysis, rows with original gene names that are unable to be mapped or are not unique are discarded from this clean output.
+#### F) clean_features_matrix.txt - Features Spreadsheet File
+- This file contains the user's input feature matrix. If the KN was used in the analysis, the original gene identifiers provided are mapped to stable Ensembl gene_ids where possible, and rows with original gene names that are unable to be mapped or are not unique are discarded from this clean output.
 
-#### G) gene_map.txt - Gene ID Mapping File
+#### G) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
 - The columns of this file are defined as follows:
     1) KN_gene_id: the stable Ensembl gene ID that KnowEnG uses internally
     2) user_gene_id: the corresponding gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
