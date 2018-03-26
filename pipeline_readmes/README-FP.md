@@ -1,15 +1,17 @@
-This file contains a description of the different output files of the feature prioritization (FP) pipeline. The downloaded zip archive will contain up to seven other files for users to further examine and understand their results.  These other files are:
+This file contains a description of the different output files of the feature prioritization (FP) pipeline. The downloaded zip archive will contain up to nine other files for users to further examine and understand their results.  These other files are:
 
 #### Results Files
 - A) features_ranked_per_phenotype - Scores for Ranked Features for Each Phenotype
 - B) top_features_by_phenotype_matrix - Top Ranked Feature Sets per Phenotype
 
 #### Reference Files
-- C) clean_features_matrix.txt - Features Spreadsheet File (mapped if KN guided analysis)
+- C) clean_features_matrix.txt - Features Spreadsheet File
 - D) clean_phenotypic_matrix.txt - Processed Phenotype Spreadsheet File
 - E) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
-- F) run_params.yml - Run Parameters File
-- G) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+- F) gene_map_exceptions.txt - Gene ID Mapping Exceptions File (if KN guided analysis)
+- G) run_params.yml - Run Parameters File
+- H) run_cleanup_params.yml - Cleanup Run Parameters File
+- I) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 
 Below are descriptions for the contents of each of these files:
 
@@ -21,7 +23,7 @@ The output format of this file will depend on the choices you made in configurin
   - Primary prioritization method = Absolute Pearson Correlation
   - Use knowledge Network = No
   - Use bootstrapping = No
-- Output Format  :
+- Output Format:
   1) Response: Name of the phenotype of interest.
   2) Feature_ID: The feature identifier.
   3) quantitative_sorting_score: The absolute value of the Pearson correlation coefficient between the phenotype and the feature.  A higher score shows the feature is more relevant to the phenotype. This value is between 0 and 1.
@@ -47,7 +49,7 @@ The output format of this file will depend on the choices you made in configurin
   - Use bootstrapping = No
 - Output Format: 
   1) Response: Name of the phenotype of interest.
-  2) Gene_ENSEMBL_ID: The ENSEMBL ID of the gene.
+  2) Feature_ID: The feature identifier.
   3) quantitative_sorting_score: The ProGENI score of the gene.  A higher score shows the gene is more relevant to the phenotype. This value is always between -1 and 1.
   4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
   5) baseline_score: The Pearson correlation coefficient between the phenotype and the gene.
@@ -60,7 +62,7 @@ The output format of this file will depend on the choices you made in configurin
   - Use bootstrapping = Yes
 - Output Format: 
   1) Response: Name of the phenotype of interest.
-  2) Gene_ENSEMBL_ID: The ENSEMBL ID of the gene.
+  2) Feature_ID: The feature identifier.
   3) quantitative_sorting_score: The aggregate score of the gene.  This score is obtained by aggregating ranked lists of genes using Borda method. Each ranked list corresponds to one instance of bootstrap sampling and is ranked using the ProGENI score. A higher score shows the gene is more relevant to the phenotype. This value is always between 1 and the total number of genes.
   4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
   5) baseline_score: The Pearson correlation coefficient between the phenotype and the gene.
@@ -97,7 +99,7 @@ The output format of this file will depend on the choices you made in configurin
   - Use bootstrapping = No
 - Output Format: 
   1) Response: Name of the phenotype of interest.
-  2) Gene_ENSEMBL_ID: The ENSEMBL ID of the gene.
+  2) Feature_ID: The feature identifier.
   3) quantitative_sorting_score: The ProGENI score of the gene.  A higher score shows the gene is more relevant to the phenotype. This value is always between -1 and 1.
 visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
   4) baseline_score: The T-statistic for each gene obtained by comparing gene expression for the two phenotype options.
@@ -110,19 +112,19 @@ visualization_score: The min-max normalized value of quantitative_sorting_score.
   - Use bootstrapping = Yes
 - Output Format: 
   1) Response: Name of the phenotype of interest.
-  2) Gene_ENSEMBL_ID: The ENSEMBL ID of the gene.
+  2) Feature_ID: The feature identifier.
   3) quantitative_sorting_score: The aggregate score of the gene.  This score is obtained by aggregating ranked lists of genes using Borda method. Each ranked list corresponds to one instance of bootstrap sampling and is ranked using the ProGENI score. A higher score shows the gene is more relevant to the phenotype. This value is always between 1 and the total number of genes.
   4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
   5) baseline_score: The T-statistic for each gene obtained by comparing gene expression for the two phenotype options.
   6) Percent_appearing_in_restart_set: Multiplying this number with 100 gives the percent of the bootstrapping instances in which this gene was used in the restart set of ProGENI.
 
 #### B) top_features_by_phenotype_matrix - Top Ranked Feature Sets per Phenotype
-- This file contains a matrix with the phenotype names as the column headers and the feature identifiers as the rows. If the KN was used in the analysis, the feature identifiers will be the stable Ensembl gene_ids. A ‘1’ in this table indicates that the row feature was one of the top 100 ranking (highest scoring) features for that specific column phenotype using the method of choice.  All other values are 0. If the features are genes, this file can be used in the Gene Set Characterization pipeline.
+- This file contains a matrix with the phenotype names as the column headers and the feature identifiers as the rows. A ‘1’ in this table indicates that the row feature was one of the top 100 ranking (highest scoring) features for that specific column phenotype using the method of choice.  All other values are 0. If the features are genes, this file can be used in the Gene Set Characterization pipeline.
 
 #### C) clean_features_matrix.txt - Features Spreadsheet File
-- This file contains the user's input feature matrix. If the KN was used in the analysis, the original gene identifiers provided are mapped to stable Ensembl gene_ids where possible, and rows with original gene names that are unable to be mapped or are not unique are discarded from this clean output.
+- This file contains the user's input feature matrix. If the KN was used in the analysis, rows with gene names that are unable to be mapped or are not unique are discarded from this clean output.
 
-#### D) clean_phenotypic_matrix.txt - Mapped Genomic Spreadsheet File
+#### D) clean_phenotypic_matrix.txt - Processed Phenotype Spreadsheet File
 - This file contains a modified version of the user’s input phenotypic matrix where foreign characters are removed and NAs are notated with a specific value.
 
 #### E) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
@@ -130,10 +132,18 @@ visualization_score: The min-max normalized value of quantitative_sorting_score.
   1) KN_gene_id: the stable Ensembl gene ID that KnowEnG uses internally
   2) user_gene_id: the corresponding gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
 
-#### F) run_params.yml - Run Parameters File
-- This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG pipeline (implementation available on GitHub) on the input data.
+#### F) gene_map_exceptions.txt - Gene ID Mapping Exceptions File (if KN guided analysis)
+- The columns of this file are defined as follows:
+  1) user_gene_id: the gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
+  2) error_code: the reason the user_gene_id was not mapped to a stable Ensembl gene ID.
 
-#### G) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+#### G) run_params.yml - Run Parameters File
+- This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG analysis pipeline (implementation available on GitHub) on the input data.
+
+#### H) run_cleanup_params.yml - Cleanup Run Parameters File
+- This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG data-cleanup pipeline (implementation available on GitHub) on the input data.
+
+#### I) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 - This yaml file contains information about the interaction network if used in the analysis.  Its keys include summarizations about the network size (“data”), its public data source details (“datasets”), information about the meaning of its edges (“edge_type”), and some commands and configurations used in its construction (“export”).
 
 The licensing terms of the source code and containers to perform this analysis can be found at https://knoweng.github.io/. Licensing information relating to the data in the Knowledge Network can be found https://knoweng.org/kn-data-references/#kn_data_resources. 

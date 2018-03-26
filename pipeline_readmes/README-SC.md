@@ -1,4 +1,4 @@
-This file contains a description of the different output files of the sample clustering (SC) pipeline. The downloaded zip archive will contain up to nine other files for users to further examine and understand their results.  These other files are:
+This file contains a description of the different output files of the sample clustering (SC) pipeline. The downloaded zip archive will contain up to eleven other files for users to further examine and understand their results.  These other files are:
 
 #### Results Files
 - A) sample_labels_by_cluster.txt - Sample Cluster Assignment File
@@ -10,8 +10,10 @@ This file contains a description of the different output files of the sample clu
 #### Reference Files
 - F) clean_features_matrix.txt - Features Spreadsheet File (mapped if KN guided analysis)
 - G) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
-- H) run_params.yml - Run Parameters File
-- I) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+- H) gene_map_exceptions.txt - Gene ID Mapping Exceptions File (if KN guided analysis)
+- I) run_params.yml - Run Parameters File
+- J) run_cleanup_params.yml - Cleanup Run Parameters File
+- K) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 
 Below are descriptions for the contents of each of these files:
 
@@ -24,10 +26,10 @@ Below are descriptions for the contents of each of these files:
 - This file contains a matrix with the genomic spreadsheet sample_ids as the row and column names.  The values in the matrix indicate the proportion of the number of bootstraps where the corresponding samples co-cluster.  If bootstrapping was not used, these values will be binary {0, 1}. 
 
 #### C) top_features_by_cluster.txt - Cluster Features Spreadsheet File
-- This file contains a matrix with the cluster numbers as the columns headers and feature identifiers as the rows. If the KN was used in the analysis, feature identifiers will be the stable Ensembl gene_ids. A ‘1’ in this table indicates that the row feature was one of the top 100 most important (highest scoring) features for that specific column cluster.  All other values are 0.  Importance is calculated as the average value across the cluster.  If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample. If features are genes, this file can be used in the Gene Set Characterization pipeline.
+- This file contains a matrix with the cluster numbers as the columns headers and feature identifiers as the rows. A ‘1’ in this table indicates that the row feature was one of the top 100 most important (highest scoring) features for that specific column cluster.  All other values are 0.  Importance is calculated as the average value across the cluster.  If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample. If features are genes, this file can be used in the Gene Set Characterization pipeline.
 
 #### D) feature_avgs_by_cluster.txt - Cluster Means Spreadsheet File
-- This file contains a matrix with the cluster numbers as the columns headers and feature identifiers as the rows. If the KN was used in the analysis, feature identifiers will be the stable Ensembl gene_ids. The values in this table are the mean value for the row feature for that specific column cluster. If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample, otherwise it is the mean of the original input values.
+- This file contains a matrix with the cluster numbers as the columns headers and feature identifiers as the rows. The values in this table are the mean value for the row feature for that specific column cluster. If the Knowledge Network was used, then it is the average of the stationary probabilities of the random walks on each sample, otherwise it is the mean of the original input values.
 
 #### E) clustering_evalutations.txt - Phenotype Association File (if phenotypic input provided)
 - The columns of this file are defined as follows:
@@ -41,17 +43,25 @@ Below are descriptions for the contents of each of these files:
   8) Comments: NA for SUCCESS in Column 7, but descriptive message for FAIL case
 
 #### F) clean_features_matrix.txt - Features Spreadsheet File
-- This file contains the user's input feature matrix. If the KN was used in the analysis, the original gene identifiers provided are mapped to stable Ensembl gene_ids where possible, and rows with original gene names that are unable to be mapped or are not unique are discarded from this clean output.
+- This file contains the user's input feature matrix. If the KN was used in the analysis, rows with gene names that are unable to be mapped or are not unique are discarded from this clean output.
 
 #### G) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
 - The columns of this file are defined as follows:
     1) KN_gene_id: the stable Ensembl gene ID that KnowEnG uses internally
-    2) user_gene_id: the corresponding gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
+    2) user_gene_id: the corresponding gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet
 
-#### H) run_params.yml - Run Parameters File
-- This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG pipeline (implementation available on GitHub) on the input data.
+#### H) gene_map_exceptions.txt - Gene ID Mapping Exceptions File (if KN guided analysis)
+- The columns of this file are defined as follows:
+  1) user_gene_id: the gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet
+  2) error_code: the reason the user_gene_id was not mapped to a stable Ensembl gene ID
 
-#### I) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+#### I) run_params.yml - Run Parameters File
+- This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG analysis pipeline (implementation available on GitHub) on the input data.
+
+#### J) run_cleanup_params.yml - Cleanup Run Parameters File
+- This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG data-cleanup pipeline (implementation available on GitHub) on the input data.
+
+#### K) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 - This yaml file contains information about the interaction network if used in the analysis.  Its keys include summarizations about the network size (“data”), its public data source details (“datasets”), information about the meaning of its edges (“edge_type”), and some commands and configurations used in its construction (“export”).
 
 The licensing terms of the source code and containers to perform this analysis can be found at https://knoweng.github.io/. Licensing information relating to the data in the Knowledge Network can be found https://knoweng.org/kn-data-references/#kn_data_resources. 
