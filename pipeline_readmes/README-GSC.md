@@ -1,4 +1,4 @@
-This file contains a description of the different output files of the gene set characterization (GSC) pipeline. The downloaded zip file will contain up to nine other reference files. The format of some output files will vary depending on the parameter options selected.
+This file contains a description of the different output files of the gene set characterization (GSC) pipeline. The downloaded zip file will contain up to eight other reference files. The format of some output files will vary depending on the parameter options selected.
 
 #### Results File
  - A) gsc_results.txt - Gene Set Characterization Results File
@@ -6,12 +6,11 @@ This file contains a description of the different output files of the gene set c
 #### Reference Files:
  - B) clean_gene_set_matrix.txt - Mapped Genomic Spreadsheet File
  - C) gene_map.txt - Gene ID Mapping File
- - D) gene_map_exceptions.txt - Gene ID Mapping Exceptions File
- - E) dropped_genes.txt - Dropped Genes File
- - F) run_params.yml - Run Parameters File
- - G) run_cleanup_params.yml - Cleanup Run Parameters File
- - H) property_networks.metadata - Gene Set Collection Metadata 
- - I) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+ - D) dropped_genes.txt - Dropped Genes File
+ - E) run_params.yml - Run Parameters File
+ - F) run_cleanup_params.yml - Cleanup Run Parameters File
+ - G) property_networks.metadata - Gene Set Collection Metadata 
+ - H) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 
 Below are descriptions for the contents of each of these files:
 
@@ -43,30 +42,25 @@ Below are descriptions for the contents of each of these files:
 
 #### C) gene_map.txt - Gene ID Mapping File
 - The columns of this file are defined as follows:
-  1) KN_gene_id: the stable Ensembl gene ID that KnowEnG uses internally
-  2) user_gene_id: the corresponding gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
+  1) user_supplied_gene_name: the gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
+  2) status: if the user-supplied gene name could be mapped to a stable Ensembl gene ID, this column will contain the Ensembl gene ID; otherwise, this column will contain the reason mapping failed ("unmapped-none" if no match was found, or "unmapped-many" if multiple matches were found).
 
-#### D) gene_map_exceptions.txt - Gene ID Mapping Exceptions File (if KN guided analysis)
-- The columns of this file are defined as follows:
-  1) user_gene_id: the gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
-  2) error_code: the reason the user_gene_id was not mapped to a stable Ensembl gene ID.
-
-#### E) dropped_genes.txt - Dropped Genes File
+#### D) dropped_genes.txt - Dropped Genes File
 - The columns of this file are defined as follows:
   1) collection: the public gene set collection whose processing required dropping the gene
   2) gene_name: the gene identifier as provided by the user in the original input
   3) gene_id: the stable Ensembl gene ID for the gene_name
 
-#### F) run_params.yml - Run Parameters File
+#### E) run_params.yml - Run Parameters File
 - This yaml file contains the run parameters that were used by the computation container that ran the KnowEnG analysis pipeline (implementation available on GitHub) on the input data. The file contains one block of parameters per public gene set collection.
 
-#### G) run_cleanup_params.yml - Cleanup Run Parameters File
+#### F) run_cleanup_params.yml - Cleanup Run Parameters File
 - This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG data-cleanup pipeline (implementation available on GitHub) on the input data.
 
-#### H) property_networks.metadata - Gene Set Collection Metadata 
+#### G) property_networks.metadata - Gene Set Collection Metadata 
 - This yaml file contains information about the gene set collection used for the results.  There is one block per public gene set collection, and within each block, keys include summarizations about the network size (“data”), its public data source details (“datasets”), information about the meaning of its edges (“edge_type”), and some commands and configurations used in its construction (“export”).
 
-#### I) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+#### H) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 - This yaml file contains information about the interaction network if used in the analysis.  Its keys include summarizations about the network size (“data”), its public data source details (“datasets”), information about the meaning of its edges (“edge_type”), and some commands and configurations used in its construction (“export”).
 
 The licensing terms of the source code and containers to perform this analysis can be found at https://knoweng.github.io/. Licensing information relating to the data in the Knowledge Network can be found https://knoweng.org/kn-data-references/#kn_data_resources. 

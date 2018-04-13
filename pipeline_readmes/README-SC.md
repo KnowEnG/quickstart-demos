@@ -1,4 +1,4 @@
-This file contains a description of the different output files of the sample clustering (SC) pipeline. The downloaded zip archive will contain up to eleven other files for users to further examine and understand their results.  These other files are:
+This file contains a description of the different output files of the sample clustering (SC) pipeline. The downloaded zip archive will contain up to ten other files for users to further examine and understand their results.  These other files are:
 
 #### Results Files
 - A) sample_labels_by_cluster.txt - Sample Cluster Assignment File
@@ -10,10 +10,9 @@ This file contains a description of the different output files of the sample clu
 #### Reference Files
 - F) clean_features_matrix.txt - Features Spreadsheet File (mapped if KN guided analysis)
 - G) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
-- H) gene_map_exceptions.txt - Gene ID Mapping Exceptions File (if KN guided analysis)
-- I) run_params.yml - Run Parameters File
-- J) run_cleanup_params.yml - Cleanup Run Parameters File
-- K) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+- H) run_params.yml - Run Parameters File
+- I) run_cleanup_params.yml - Cleanup Run Parameters File
+- J) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 
 Below are descriptions for the contents of each of these files:
 
@@ -47,21 +46,16 @@ Below are descriptions for the contents of each of these files:
 
 #### G) gene_map.txt - Gene ID Mapping File (if KN guided analysis)
 - The columns of this file are defined as follows:
-    1) KN_gene_id: the stable Ensembl gene ID that KnowEnG uses internally
-    2) user_gene_id: the corresponding gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet
+  1) user_supplied_gene_name: the gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet.
+  2) status: if the user-supplied gene name could be mapped to a stable Ensembl gene ID, this column will contain the Ensembl gene ID; otherwise, this column will contain the reason mapping failed ("unmapped-none" if no match was found, or "unmapped-many" if multiple matches were found).
 
-#### H) gene_map_exceptions.txt - Gene ID Mapping Exceptions File (if KN guided analysis)
-- The columns of this file are defined as follows:
-  1) user_gene_id: the gene/transcript/protein identifier supplied by the user in the original genomic spreadsheet
-  2) error_code: the reason the user_gene_id was not mapped to a stable Ensembl gene ID
-
-#### I) run_params.yml - Run Parameters File
+#### H) run_params.yml - Run Parameters File
 - This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG analysis pipeline (implementation available on GitHub) on the input data.
 
-#### J) run_cleanup_params.yml - Cleanup Run Parameters File
+#### I) run_cleanup_params.yml - Cleanup Run Parameters File
 - This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG data-cleanup pipeline (implementation available on GitHub) on the input data.
 
-#### K) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
+#### J) interaction_network.metadata - Knowledge Network Metadata (if KN guided analysis)
 - This yaml file contains information about the interaction network if used in the analysis.  Its keys include summarizations about the network size (“data”), its public data source details (“datasets”), information about the meaning of its edges (“edge_type”), and some commands and configurations used in its construction (“export”).
 
 The licensing terms of the source code and containers to perform this analysis can be found at https://knoweng.github.io/. Licensing information relating to the data in the Knowledge Network can be found https://knoweng.org/kn-data-references/#kn_data_resources. 
