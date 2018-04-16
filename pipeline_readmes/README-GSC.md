@@ -21,21 +21,23 @@ Below are descriptions for the contents of each of these files:
   2) property_gene_set_id: the internal KnowEnG ids for public gene sets from one public gene set collection
   3) property_gene_set_alias: alias for the gene set from its original data source
   4) property_gene_set_description: description for the gene set from its original data source
-  5) difference_score: difference of query_score (col4) and baseline_score(col5) divided by the largest difference in the file. This value is between 0 and 1 and reported when it is greater than 0.5
-  6) query_score: converged stationary probability of being at the property_gene_set node in the chosen heterogenous network given that you restart at any only gene node from the user gene set. This value is between 0 and 1.
-  7) baseline_score: converged stationary probability of being at the property_gene_set node in the chosen heterogenous network given that you restart at any gene node. This value is between 0 and 1.
+  5) collection: name of the public gene set collection
+  6) difference_score: difference of query_score (col7) and baseline_score(col8) divided by the largest difference in the file. This value is between 0 and 1 and reported when it is greater than 0.5
+  7) query_score: converged stationary probability of being at the property_gene_set node in the chosen heterogenous network given that you restart at any only gene node from the user gene set. This value is between 0 and 1.
+  8) baseline_score: converged stationary probability of being at the property_gene_set node in the chosen heterogenous network given that you restart at any gene node. This value is between 0 and 1.
 - If "No" Option (Fisher Exact):
   1) user_gene_set: the names of the gene sets that you submitted
   2) property_gene_set_id: the internal KnowEnG ids for public gene sets from one public gene set collection
   3) property_gene_set_alias: alias for the gene set from its original data source
   4) property_gene_set_description: description for the gene set from its original data source
-  5) pvalue: the -1 * log10 pvalue of the one sided (alternative = 'greater') Fisher Exact Test using the contingency table corresponding to the user set and property gene set of the row. This value is reported when it is greater than 2.
+  5) collection: name of the public gene set collection
+  6) pvalue: the -1 * log10 pvalue of the one sided (alternative = 'greater') Fisher Exact Test using the contingency table corresponding to the user set and property gene set of the row. This value is reported when it is greater than 2.
       + NOTE1: You can take 10^-x to convert these values back into the original pvalues.
       + NOTE2: These pvalues (-1*log10) have not been corrected for multiple hypothesis testing.
-  6) universe_count: total number of genes annotated by the public gene set collection and listed in your spreadsheet (or known for the species of your submitted gene list).
-  7) user_count: size of your gene set in the universe
-  8) property_count: size of the public gene set in the universe
-  9) overlap_count: size of the overlap between the two in the universe
+  7) universe_count: total number of genes annotated by the public gene set collection and listed in your spreadsheet (or known for the species of your submitted gene list).
+  8) user_count: size of your gene set in the universe
+  9) property_count: size of the public gene set in the universe
+  10) overlap_count: size of the overlap between the two in the universe
 
 #### B) clean_gene_set_matrix.txt - Mapped Genomic Spreadsheet File
 - This file contains a modified version of the user’s input genomic matrix. Rows whose gene names could not be mapped to stable Ensembl gene IDs or are not unique are discarded from this clean output.  Only the remaining genes are used for the gene universe for the gene set characterization method.
