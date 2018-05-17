@@ -39,9 +39,7 @@ The demo samples file was the *Genomic Spreadsheet File* output file of this run
 
 ([Here](https://cgc.sbgenomics.com/u/mepstein/geneprioritization/tasks/e92155f4-c02d-4b9e-b717-279f9ca1ee17/) is the run that created this file.)
 
-Two additional steps were done to reduce the size of this file to allow it to be stored on github.  First, the values were rounded when written, using a line of code (python) like the following:
-```df.to_csv(output_file , sep="\t", float_format="%g")```
-And then it was compressed using `bzip2`.
+Two additional steps were done to reduce the size of this file to allow it to be stored on github.  First, the values were rounded when written, using a line of code (python) like the following: `df.to_csv(output_file , sep="\t", float_format="%g")`.  And then it was compressed using `bzip2`.
 
 #### Demo signatures file: name: `demo_SA.signatures.txt`
 
