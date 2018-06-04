@@ -22,7 +22,7 @@ Below are descriptions for the contents of each of these files:
   3) property_gene_set_alias: alias for the gene set from its original data source
   4) property_gene_set_description: description for the gene set from its original data source
   5) collection: name of the public gene set collection
-  6) difference_score: difference of query_score (col7) and baseline_score(col8) divided by the largest difference in the file. This value is between 0 and 1 and reported when it is greater than 0.5
+  6) difference_score: difference of query_score (col7) and baseline_score(col8) divided by the largest difference in the file. This value is between 0 and 1.
   7) query_score: converged stationary probability of being at the property_gene_set node in the chosen heterogenous network given that you restart at any only gene node from the user gene set. This value is between 0 and 1.
   8) baseline_score: converged stationary probability of being at the property_gene_set node in the chosen heterogenous network given that you restart at any gene node. This value is between 0 and 1.
 - If "No" Option (Fisher Exact):
@@ -31,7 +31,7 @@ Below are descriptions for the contents of each of these files:
   3) property_gene_set_alias: alias for the gene set from its original data source
   4) property_gene_set_description: description for the gene set from its original data source
   5) collection: name of the public gene set collection
-  6) pvalue: the -1 * log10 pvalue of the one sided (alternative = 'greater') Fisher Exact Test using the contingency table corresponding to the user set and property gene set of the row. This value is reported when it is greater than 2.
+  6) negative_log10_pvalue: the -1 * log10 pvalue of the one sided (alternative = 'greater') Fisher Exact Test using the contingency table corresponding to the user set and property gene set of the row.
       + NOTE1: You can take 10^-x to convert these values back into the original pvalues.
       + NOTE2: These pvalues (-1*log10) have not been corrected for multiple hypothesis testing.
   7) universe_count: total number of genes annotated by the public gene set collection and listed in your spreadsheet (or known for the species of your submitted gene list).
