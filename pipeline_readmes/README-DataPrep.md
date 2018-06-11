@@ -40,7 +40,7 @@ If you have a dataset relating to one of our 20 supported species (see [list](ht
 you should prepare your data using the following formats.
 
 ### Formatting 'Omics Spreadsheets
-![Omics Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/pipeline_readmes/images/genomic_spreadsheet_example.PNG "Omics Spreadsheet Example")
+![Omics Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/raw/master/pipeline_readmes/images/genomic_spreadsheet_sample.PNG "Omics Spreadsheet Example")
 
 For any ‘omics spreadsheets, 
 - the columns should represent samples/conditions and the first row must contain unique sample identifiers
@@ -61,7 +61,7 @@ the entire file (e.g. entirely binary (0/1), entirely non-negative values, or al
   transform to microarray data) to satisfy this condition.
 
 ### Formatting Phenotypic Spreadsheets
-![Phenotype Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/pipeline_readmes/images/phenotype_spreadsheet_example.PNG "Phenotype Spreadsheet Example")
+![Phenotype Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/raw/master/pipeline_readmes/images/phenotype_spreadsheet_example.PNG "Phenotype Spreadsheet Example")
 
 For any phenotypic spreadsheets
 - the rows should represent the different samples/conditions with the first column containing sample 
@@ -76,4 +76,4 @@ with the first row containing a unique identifier for each phenotypic variable
 ## Contact Us
 The KnowEnG team is eager to help demonstrate the power of knowledge-guided analysis for our users on their own 
 research datasets. If you have any questions about preparing your data for the special session, please email 
-[knoweng-support.illinois.edu](knoweng-support.illinois.edu) for more information. 
+[knoweng-support.illinois.edu](mailto:knoweng-support.illinois.edu) for more information. 
