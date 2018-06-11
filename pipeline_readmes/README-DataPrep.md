@@ -40,7 +40,7 @@ If you have a dataset relating to one of our 20 supported species (see [list](ht
 you should prepare your data using the following formats.
 
 ### Formatting 'Omics Spreadsheets
-![Omics Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/pipeline_readmes/images/genomics_spreadsheet_example.png "Omics Spreadsheet Example")
+![Omics Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/pipeline_readmes/images/genomic_spreadsheet_example.PNG "Omics Spreadsheet Example")
 
 For any ‘omics spreadsheets, 
 - the columns should represent samples/conditions and the first row must contain unique sample identifiers
@@ -61,7 +61,7 @@ the entire file (e.g. entirely binary (0/1), entirely non-negative values, or al
   transform to microarray data) to satisfy this condition.
 
 ### Formatting Phenotypic Spreadsheets
-![Phenotype Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/pipeline_readmes/images/phenotypic_spreadsheet_example.png "Phenotype Spreadsheet Example")
+![Phenotype Spreadsheet Example](https://github.com/KnowEnG/quickstart-demos/pipeline_readmes/images/phenotype_spreadsheet_example.PNG "Phenotype Spreadsheet Example")
 
 For any phenotypic spreadsheets
 - the rows should represent the different samples/conditions with the first column containing sample 
