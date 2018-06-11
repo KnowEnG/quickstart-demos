@@ -9,7 +9,7 @@ The [KnowEnG Platform](https://knoweng.org/analyze/) tools are designed to analy
 **“‘omics spreadsheets”**, data matrices containing measurements/values for 
 genes/transcripts/proteins for multiple samples/conditions.  
 
-For example, spreadsheets can contain:
+For example, 'omics spreadsheets can contain:
 - transcriptomic profiles, 
 - differential expression gene sets, 
 - protein quantification measurements,
@@ -17,23 +17,24 @@ For example, spreadsheets can contain:
 - gene promoter scores of accessibility or transcription factor binding
 - etc.
 
-### Available Analyses
+### Available Analysis Tools
 KnowEnG has tools for examining and analyzing these ‘omics spreadsheets using prior knowledge on 
 genes/proteins. These tools include:
 
 1. **Spreadsheet Visualizer**: for visualizing ‘omics spreadsheets and 
-2. **Sample Clustering**: for clustering the samples of the spreadsheet using prior knowledge [[NBS](https://www.nature.com/articles/nmeth.2651)].  
+2. **Sample Clustering** [[NBS](https://www.nature.com/articles/nmeth.2651)]: for clustering the samples 
+of the spreadsheet using prior knowledge.  
 
 If your samples/conditions have related phenotypic/clinical data associated with them 
 (captured in a **“phenotypic spreadsheet”**), then KnowEnG also has a tool:  
 
-3. **Gene Prioritization**: for identifying the ‘omics features that are related to a phenotype of 
-interest using interaction networks [[ProGENI](https://www.ncbi.nlm.nih.gov/pubmed/28800781)].
+3. **Gene Prioritization** [[ProGENI](https://www.ncbi.nlm.nih.gov/pubmed/28800781)]: for identifying the 
+‘omics features that are related to a phenotype of interest using interaction networks.
 
 Finally, you can simply bring a set of genes you are interested in for KnowEnG’s specialized: 
 
-4. **Gene Set Characterization**: for finding pathways and Gene Ontology terms related to your input 
-gene set using prior knowledge of gene/protein relationships [[DRaWR](https://www.ncbi.nlm.nih.gov/pubmed/27153592)].
+4. **Gene Set Characterization** [[DRaWR](https://www.ncbi.nlm.nih.gov/pubmed/27153592)]: for finding pathways and Gene Ontology terms related to your input 
+gene set using prior knowledge of gene/protein relationships.
 
 ## Supported Data Formats
 If you have a dataset relating to one of our 20 supported species (see [list](https://knoweng.org/kn-data-references/#kn_contents_by_species)), 
@@ -75,5 +76,5 @@ with the first row containing a unique identifier for each phenotypic variable
 	
 ## Contact Us
 The KnowEnG team is eager to help demonstrate the power of knowledge-guided analysis for our users on their own 
-research datasets. If you have any questions about preparing your data for the special session, please email 
+research datasets. If you have any questions about preparing your data, please email 
 [knoweng-support.illinois.edu](mailto:knoweng-support.illinois.edu) for more information. 
