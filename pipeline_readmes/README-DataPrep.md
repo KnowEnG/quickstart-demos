@@ -77,4 +77,4 @@ with the first row containing a unique identifier for each phenotypic variable
 ## Contact Us
 The KnowEnG team is eager to help demonstrate the power of knowledge-guided analysis for our users on their own 
 research datasets. If you have any questions about preparing your data, please email 
-[knoweng-support.illinois.edu](mailto:knoweng-support@illinois.edu) for more information. 
+[knoweng-support@illinois.edu](mailto:knoweng-support@illinois.edu) for more information. 
