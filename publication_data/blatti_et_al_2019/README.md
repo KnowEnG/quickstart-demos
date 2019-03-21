@@ -158,7 +158,7 @@ This is an application of the *Signature Analysis* pipeline relating ESCC tumor 
 Similarity Measure: `Spearman`  
 
 #### Primary Output File
-The primary output file [in7_GP_esccBestSignature_out6](spreadsheets/in7_GP_esccBestSignature_out6) is a membership matrix that maps each ESCC sample to one of four LUSC subtypes and follows the format specified [here](https://github.com/KnowEnG/quickstart-demos/blob/master/pipeline_readmes/README-SA.md#b-similarity_matrixbinarytsv---indicates-the-signature-with-the-maximum-score-for-each-sample).
+The primary output file [in7_FP_esccBestSignature_out6](spreadsheets/in7_FP_esccBestSignature_out6) is a membership matrix that maps each ESCC sample to one of four LUSC subtypes and follows the format specified [here](https://github.com/KnowEnG/quickstart-demos/blob/master/pipeline_readmes/README-SA.md#b-similarity_matrixbinarytsv---indicates-the-signature-with-the-maximum-score-for-each-sample).
 
 
 ### Run7: Prioritization of subtype-associated genes
@@ -168,8 +168,8 @@ This is an application of the *Feature Prioritization* pipeline on the results f
 #### Input Files
 **File Name**|**File Type**|**Size**|**Dimensions**|**Values**|**Original Source**|**Description**
 ---|---|---|---|---|---|---
-[in7_GP_esccExpression](spreadsheets/in7_GP_esccExpression.bz2)|omics query file|27 MB|17842 genes by 79 samples|real values|TCGA data from the SevenBridges Cancer Genomics Cloud, instructions for download found [here](https://github.com/KnowEnG/KnowEnG_CWL/tree/master/CGC#gathering-the-tcga-input-files)|gene normalized log2(FPKM +1) gene expression of gene for sample, gene names have been mapped to Ensembl IDs by [KN_Mapper](https://github.com/KnowEnG/KN_Mapper)
-[in7_GP_esccBestSignature_out6](spreadsheets/in7_GP_esccBestSignature_out6)|response file|2 KB|79 samples by 4 subtypes|0/1-valued|run6 SA primary output|[format description](https://github.com/KnowEnG/quickstart-demos/blob/master/pipeline_readmes/README-SA.md#b-similarity_matrixbinarytsv---indicates-the-signature-with-the-maximum-score-for-each-sample)
+[in7_FP_esccExpression](spreadsheets/in7_FP_esccExpression.bz2)|omics query file|27 MB|17842 genes by 79 samples|real values|TCGA data from the SevenBridges Cancer Genomics Cloud, instructions for download found [here](https://github.com/KnowEnG/KnowEnG_CWL/tree/master/CGC#gathering-the-tcga-input-files)|gene normalized log2(FPKM +1) gene expression of gene for sample, gene names have been mapped to Ensembl IDs by [KN_Mapper](https://github.com/KnowEnG/KN_Mapper)
+[in7_FP_esccBestSignature_out6](spreadsheets/in7_FP_esccBestSignature_out6)|response file|2 KB|79 samples by 4 subtypes|0/1-valued|run6 SA primary output|[format description](https://github.com/KnowEnG/quickstart-demos/blob/master/pipeline_readmes/README-SA.md#b-similarity_matrixbinarytsv---indicates-the-signature-with-the-maximum-score-for-each-sample)
 
 #### Input Parameters
 Knowledge Network: `No`  
