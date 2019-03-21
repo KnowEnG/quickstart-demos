@@ -41,7 +41,7 @@ This is an application of the *Sample Clustering* pipeline on TCGA PANCAN12 soma
 **File Name**|**File Type**|**Size**|**Dimensions**|**Values**|**Original Source**|**Description**
 ---|---|---|---|---|---|---
 [in1_SC_pancanMutations](spreadsheets/in1_SC_pancanMutations.bz2)|omics feature file|391 MB|31152 genes by 3276 samples|0/1-valued|TCGA_PANCAN12_mutation-2015-01-28.tgz file from UCSC Cancer Genome Browser PANCAN12 collection|presence of non-silent somatic mutation in protein coding region of gene for sample, gene names have been mapped to Ensembl IDs by [KN_Mapper](https://github.com/KnowEnG/KN_Mapper)
-[in1_SC_pancanClincal](spreadsheets/in1_SC_pancanClincal.bz2)|phenotype file|1.1 MB|3276 samples by 28 phenotypic categories|mixed|TCGA_PANCAN12_mutation-2015-01-28.tgz file from UCSC Cancer Genome Browser PANCAN12 collection|clinical data for TCGA samples
+[in1_SC_pancanClinical](spreadsheets/in1_SC_pancanClinical.bz2)|phenotype file|1.1 MB|3276 samples by 28 phenotypic categories|mixed|TCGA_PANCAN12_mutation-2015-01-28.tgz file from UCSC Cancer Genome Browser PANCAN12 collection|clinical data for TCGA samples
 
 #### Input Parameters
 Knowledge Network: `Yes`  
@@ -108,8 +108,8 @@ This is an application of the *Feature Prioritization* pipeline on the TCGA PANC
 #### Input Files
 **File Name**|**File Type**|**Size**|**Dimensions**|**Values**|**Original Source**|**Description**
 ---|---|---|---|---|---|---
-[in4_GP_pancanExpression](spreadsheets/in4_GP_pancanExpression)|omics feature file|427 MB|14373 genes by 3599 samples|real values|TCGA_PANCAN12_exp_HiSeqV2-2015-01-28.tgz file from UCSC Cancer Genome Browser PANCAN12 collection, more information [here](https://www.synapse.org/#!Synapse:syn1715755)|gene normalized log2 expression of gene for sample, missing values are filled with gene mean, gene names have been mapped to Ensembl IDs by [KN_Mapper](https://github.com/KnowEnG/KN_Mapper)
-[in4_GP_pancanDiseaseType](spreadsheets/in4_GP_pancanDiseaseType)|response file|197 KB|5040 samples by 12 disease types|0/1-valued|TCGA_PANCAN12_exp_HiSeqV2-2015-01-28.tgz file from UCSC Cancer Genome Browser PANCAN12 collection|clinical data for TCGA samples where "_primary_disease" field is transformed into membership matrix by "Category to Binary" tool in Spreadsheet Transformations Jupyter notebook
+[in4_FP_pancanExpression](spreadsheets/in4_FP_pancanExpression.bz2)|omics feature file|427 MB|14373 genes by 3599 samples|real values|TCGA_PANCAN12_exp_HiSeqV2-2015-01-28.tgz file from UCSC Cancer Genome Browser PANCAN12 collection, more information [here](https://www.synapse.org/#!Synapse:syn1715755)|gene normalized log2 expression of gene for sample, missing values are filled with gene mean, gene names have been mapped to Ensembl IDs by [KN_Mapper](https://github.com/KnowEnG/KN_Mapper)
+[in4_FP_pancanDiseaseType](spreadsheets/in4_FP_pancanDiseaseType)|response file|197 KB|5040 samples by 12 disease types|0/1-valued|TCGA_PANCAN12_exp_HiSeqV2-2015-01-28.tgz file from UCSC Cancer Genome Browser PANCAN12 collection|clinical data for TCGA samples where "_primary_disease" field is transformed into membership matrix by "Category to Binary" tool in Spreadsheet Transformations Jupyter notebook
 
 #### Input Parameters
 Knowledge Network: `Yes`  
@@ -141,7 +141,7 @@ Public Gene Sets: `Ontologies > Gene Ontology`
 Knowledge Network: `No`  
 
 #### Primary Output File
-The primary output file [out5_GSC_diseaseGeneOntology](spreadsheets/out5_GSC_diseaseGeneOntology) is a list of enriched gene set pairs that follows the format specified [here](https://github.com/KnowEnG/quickstart-demos/blob/master/pipeline_readmes/README-GSC.md#a-gsc_resultstxt---gene-set-characterization-results-file).
+The primary output file [out5_GSC_diseaseGeneOntology](spreadsheets/out5_GSC_diseaseGeneOntology.bz2) is a list of enriched gene set pairs that follows the format specified [here](https://github.com/KnowEnG/quickstart-demos/blob/master/pipeline_readmes/README-GSC.md#a-gsc_resultstxt---gene-set-characterization-results-file).
 
 
 ### Run6: Signature analysis for patient subtyping
