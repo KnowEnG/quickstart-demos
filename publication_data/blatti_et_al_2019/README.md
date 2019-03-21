@@ -226,4 +226,12 @@ Contact us at [knoweng-support@illinois.edu](mailto:knoweng-support@illinois.edu
 
 ## License
 
-The code in this project is licensed under a MIT license: [LICENSE](https://github.com/KnowEnG/KN_Mapper/blob/master/LICENSE).
+This README and the files in the `spreadsheets` subdirectory are provided under 
+the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+As explained in the text above, some spreadsheets contain data from third parties. More
+information about the use and distribution of these data can be found on the
+following pages:
+- https://www.synapse.org/#!Synapse:syn2468297/wiki/64259
+- http://oasis-genomics.org/includes/pfizer/terms.html
+- https://gdc.cancer.gov/about-gdc/gdc-faqs
