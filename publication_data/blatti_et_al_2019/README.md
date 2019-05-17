@@ -4,7 +4,7 @@
 
 With the following data files and input parameters, users of the [KnowEnG Analysis Platform](https://knoweng.org/analyze/) can recreate the eight different primary analyses reported in: 
 
-Blatti, et al. Knowledge-guided pan-cancer analysis of TCGA datasets using the KnowEnG analytical platform. _In preparation_.
+Blatti, et al. Knowledge-guided analysis of ‘omics’ data using the KnowEnG cloud platform. _In preparation_.
 
 ## Table of Contents
 1. [Background](#background)
