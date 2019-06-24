@@ -35,7 +35,7 @@ The eight analyses below use novel combinations of knowledge-guided analysis pip
 
 ### Run1: Knowledge-guided clustering of mutation profiles
 
-This is an application of the *Sample Clustering* pipeline on TCGA PANCAN12 somatic mutation data. **Note:** This is a very large analysis and it will run for nearly 90 minutes before completing, however, the completing of this job is not required before moving on to the other analyses presented here.
+This is an application of the *Sample Clustering* pipeline on TCGA PANCAN12 somatic mutation data. **Note:** This is a very large analysis and it will run for nearly 90 minutes before completing, however, the completion of this job is not required before moving on to the other analyses presented here.
 
 #### Input Files
 **File Name**|**File Type**|**Size**|**Dimensions**|**Values**|**Original Source**|**Description**
