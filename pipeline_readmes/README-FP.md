@@ -91,7 +91,31 @@ The output format of this file will depend on the choices you made in configurin
   4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
   5) baseline_score: The T-statistic for each feature obtained by comparing feature values for the two phenotype options.
 
-##### Option 7 (ProGENI T-test):
+##### Option 7 (edgeR):
+- Choices:
+  - Primary prioritization method = edgeR
+  - Use knowledge Network = No
+  - Use bootstrapping = No
+- Output Format: 
+  1) Response: Name of the phenotype of interest.
+  2) Feature_ID: The feature identifier.
+  3) quantitative_sorting_score: The absolute value of the baseline score.  A higher score shows the feature is more differentially valued. 
+  4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
+  5) baseline_score: The log10 of the edgeR differential expression p-value (of the quasi-likelihood F-test) with a positive value indicating over-expression and a negative value indicating under-expression.
+
+##### Option 8 (Robust edgeR):
+- Choices:
+  - Primary prioritization method = edgeR
+  - Use knowledge Network = No
+  - Use bootstrapping = Yes
+- Output Format: 
+  1) Response: Name of the phenotype of interest.
+  2) Feature_ID: The feature identifier.
+  3) quantitative_sorting_score: The aggregate score of the feature.  This score is obtained by aggregating ranked lists of features using Borda method. Each ranked list corresponds to one instance of bootstrap sampling and is ranked using the absolute value of the baseline score. A higher score shows the feature is more differentially valued. This value is always between 1 and the total number of features.
+  4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
+  5) baseline_score: The log10 of the edgeR differential expression p-value (of the quasi-likelihood F-test) with a positive value indicating over-expression and a negative value indicating under-expression.
+
+##### Option 9 (ProGENI T-test):
 - Choices:
   - Primary prioritization method = T-test
   - Use knowledge Network = Yes
@@ -104,7 +128,7 @@ visualization_score: The min-max normalized value of quantitative_sorting_score.
   4) baseline_score: The T-statistic for each gene obtained by comparing gene expression for the two phenotype options.
   5) Percent_appearing_in_restart_set: Multiplying this number with 100 gives the percent of the bootstrapping instances in which this gene was used in the restart set of ProGENI. Since no bootstrapping was done in this option, these values are either 0 or 1.
 
-##### Option 8 (Robust-ProGENI T-test):
+##### Option 10 (Robust-ProGENI T-test):
 - Choices:
   - Primary prioritization method = T-test
   - Use knowledge Network = Yes
