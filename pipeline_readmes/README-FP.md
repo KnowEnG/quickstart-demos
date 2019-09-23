@@ -91,9 +91,9 @@ The output format of this file will depend on the choices you made in configurin
   4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
   5) baseline_score: The T-statistic for each feature obtained by comparing feature values for the two phenotype options.
 
-##### Option 7 (edgeR):
+##### Option 7 (EdgeR):
 - Choices:
-  - Primary prioritization method = edgeR
+  - Primary prioritization method = EdgeR
   - Use knowledge Network = No
   - Use bootstrapping = No
 - Output Format: 
@@ -103,9 +103,9 @@ The output format of this file will depend on the choices you made in configurin
   4) visualization_score: The min-max normalized value of quantitative_sorting_score. This value is always between 0 and 1.
   5) baseline_score: The log10 of the edgeR differential expression p-value (of the quasi-likelihood F-test) with a positive value indicating over-expression and a negative value indicating under-expression.
 
-##### Option 8 (Robust edgeR):
+##### Option 8 (Robust EdgeR):
 - Choices:
-  - Primary prioritization method = edgeR
+  - Primary prioritization method = EdgeR
   - Use knowledge Network = No
   - Use bootstrapping = Yes
 - Output Format: 
