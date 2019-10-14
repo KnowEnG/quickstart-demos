@@ -1,5 +1,5 @@
 
-This file contains a description of the different output files of the network mapper (NP) pipeline. The downloaded zip archive will contain up to six other files for users to further examine and understand their results.  These other files are:
+This file contains a description of the different output files of the network prepper (NP) pipeline. The downloaded zip archive will contain six other files for users to further examine and understand their results.  These other files are:
 
 #### Results Files
 - A) *.clean.edge - Final Clean Network Edge File
@@ -32,7 +32,7 @@ This file contains information for the nodes in the final network that maps the 
 - This yaml file contains information about the prepared network. Its keys include summarizations about the network size, information about the meaning of its edges, and some commands and configurations used in its construction.
 
 #### D) *.full_mapped_edges.tsv - Intermediate Network Edge File
-The rows of this file correspond one-to-one with the rows of the input edge file.  Four additional columns have been pre-pended to the original file: 
+The rows of this file correspond one-to-one with the rows of the input edge file.  Four additional columns have been pre-pended to the original file:
   1) Source Mapped ID: stable Ensembl identifier found by KnowEnG for the source node of the edge
   2) Source Mapped Alias: standard short name for the source node of the edge
   3) Target Mapped ID: stable Ensembl identifier found by KnowEnG for the target node of the edge
@@ -51,4 +51,4 @@ This file contains information for all nodes in the original network and mapping
 #### F) run_params.yml - Run Parameters File
 - This yaml file contains the run parameters file that was used by the computation container that ran the KnowEnG analysis pipeline (implementation available on GitHub) on the input data.
 
-The licensing terms of the source code and containers to perform this analysis can be found at https://knoweng.github.io/. Licensing information relating to the data in the Knowledge Network can be found https://knoweng.org/kn-data-references/#kn_data_resources. 
+The licensing terms of the source code and containers to perform this analysis can be found at https://knoweng.github.io/. Licensing information relating to the data in the Knowledge Network can be found https://knoweng.org/kn-data-references/#kn_data_resources.
